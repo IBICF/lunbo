@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>轮播组件</title>
+    <link rel="stylesheet" type="text/css" href="./style/slider.css">
+</head>
+
+<body>
+    <div id="banner"></div>
+    <script type="text/javascript" src="./scripts/slider.js"></script>
+    <script type="text/javascript">
+        var options = {};
+        options.oDiv = document.getElementById('banner');
+        options.imgs = ['./imgs/img1.png', './imgs/img2.png', './imgs/img3.png', './imgs/img4.png', './imgs/img5.png'];
+        options.hrefs = ['#', '#', '#', '#', '#'];
+        options.height = '400px';
+        options.width = '100%';
+        options.time = 2000;
+        var slider = new Slider(options);
+    </script>
+</body>
+
+</html>
